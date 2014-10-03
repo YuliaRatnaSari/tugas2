@@ -1,0 +1,37 @@
+#include <stdio.h>
+int main()
+{
+    float hasil, s, r, t;
+    int jenis, rumus;
+    printf("1. Menghitung volume kubus\n");
+    printf("2. Menghitung luas lingkaran\n");
+    printf("3. Menghitung volume silinder\n");
+    printf("Masukkan pilihan Anda: ");
+    scanf("%d", &rumus);
+
+    switch(rumus)
+    {
+    case 1:
+            printf("Masukkan panjang sisi: ");
+            scanf("%f", &s);
+            hasil = s*s*s;
+            printf("Volume kubus = %f\n", hasil);
+            break;
+    case 2:
+            printf("Masukkan panjang jari-jari: ");
+            scanf("%f", &r);
+            hasil = 3.14*r*r;
+            printf("Luas lingkaran = %f", hasil);
+            break;
+    case 3:
+            printf("Masukkan panjang jari-jari: ");
+            scanf("%f", &r);
+            printf("Masukkan panjang tinggi: ");
+            scanf("%f", &t);
+            hasil = 3.14*r*r*t;
+            printf("Masukkan volume silinder = %f", hasil);
+            break;
+    default:
+            printf("Pilihan Anda salah\n");
+    }
+}
